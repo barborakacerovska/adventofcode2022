@@ -1,0 +1,28 @@
+[[package]]
+name = "ast"
+version = "0.0.2"
+description = "Conversion between protobuf3 and srcML."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+faster-signatures = ["ed25519ll"]
+signatures = ["keyring", "keyrings.alt", "importlib", "pyxdg"]
+
+[[package]]
+name = "numpy"
+version = "1.23.5"
+description = "NumPy is the fundamental package for array computing with Python."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "70377a6dc5628afb3e8f78e78bab5a25536797b8d7189f79fe5a2a2b8192e902"
+
+[metadata.files]
+ast = []
+numpy = []
