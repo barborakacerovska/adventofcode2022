@@ -26,28 +26,3 @@ elves_top_3 = dict(list(elves_sorted.items())[0:3])
 print('Top 3 calories - total:', sum(elves_top_3.values()))
 
 
-
-
-
-# from numpy import genfromtxt
-
-# my_data = genfromtxt('inputdata.csv',  dtype= 'int64', filling_values= '', missing_values = '' , comments='x', delimiter='/n/n')
-# print(my_data)
-# for i in my_data:
-#     print(i)
-
-
-
-# from itertools import groupby
-
-# data = []
-# with open('inputdata.txt', 'r') as f:
-#     data = (k.split() for k in f.read().splitlines())
-
-# final = []
-# for _, v in groupby(data, lambda x: x != []):
-#     bb = list(list(v))
-#     final.append(bb)
-
-
-# print(final[2])
