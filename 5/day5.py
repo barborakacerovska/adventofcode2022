@@ -29,15 +29,19 @@ def move_crate(move, stack):
             stack_to[position_to] = letter
     return stack_new
 
-
-
 def get_last_crate_position(position):
     try:
         last_pos = position.index(' ')
     except ValueError:
         last_pos = len(position) 
     return last_pos
-    
+
+def print_last_position(stack):
+    for i in stack_dict.values():
+        try: 
+            print(i[get_last_crate_position(i)-1])
+        except KeyError:
+            print(i[-1])
 
 
 with open('input3.txt') as t:
@@ -53,11 +57,12 @@ stack_dict = {key+1:value for (key,value) in enumerate(stack)}
 # cleans moves
 moves = [[int(j) for j in remove_words(i).split(',')] for i in moves_input.split("\n")]
 
-
+# move crates
 for move in moves:
     move_crate(move, stack_dict)
 
-
+# print last crate
+print_last_position(stack_dict)
 
 
 
