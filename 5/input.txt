@@ -2,4 +2,4 @@ a b c d
 e f g h
 1 2 3 4
 
-df
+move 2 from 1 to 2
